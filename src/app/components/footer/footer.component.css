@@ -1,0 +1,42 @@
+.align {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(181, 181, 181);
+}
+
+.link:hover {
+  color: #53ad28;
+  text-decoration: none;
+}
+
+.production {
+  font-size: 13px;
+  color: rgb(150, 150, 150);
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.social-media {
+  display: inline-flex;
+}
+
+.social-media-logo {
+  margin: 0 3px;
+}
+
+.footer-category {
+  margin-top: 15px;
+}
+
+.language-switcher {
+  width: 200px;
+  margin: 0 35%;
+}

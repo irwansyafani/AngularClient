@@ -1,0 +1,25 @@
+<div [class.box]="true">
+  <img [class.product-img]="true" [src]="product.img">
+  <div>
+    <img [class.status-logo]="true" src="https://ecs7-p.tokopedia.net/img/power_merchant_badge.png">
+    <div [class.inline]="true">
+      <p [class.status]="true">Power Merchant</p>
+    </div>
+    <p [class.product-name]="true">{{ product.name }}</p>
+    <p><ngb-rating [rate]="product.rate[0]"></ngb-rating> • Sold 184 Product • 7143 Seen</p>
+    <hr>
+    <p [class.product-price]="true">Rp {{ product.price }}</p>
+    <hr>
+    <small>Stock  {{ product.stock }}, beli segera!</small><br>
+    <input type="number" [class.product-stock]="true" min="1" [max]="product.stock" value="1">
+    <small>Min. pembelian 1pcs</small>
+    <hr>
+    <p [class.product-address]="true">{{ product.address }}</p>
+    <hr>
+    <div class="btn-group-toggle" data-toggle="buttons">
+      <label class="btn active" [class.button-add-to-cart]="true">
+        <input type="checkbox" checked>Add to Cart
+      </label>
+    </div>
+  </div>
+</div>

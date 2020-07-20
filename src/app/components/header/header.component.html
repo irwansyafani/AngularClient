@@ -1,0 +1,16 @@
+<nav [class.align-nav]="true">
+  <img routerLink="/" src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg" alt="tokopedia lite">
+  <p>Category</p>
+  <div [class.inline]="true">
+    <input [class.search-input]="true" placeholder="Cari Barang?"  type="text" class="form-control" [(ngModel)]="search"/>
+    <button [class.search-button]="true" >
+      <img src="https://img.icons8.com/cotton/16/000000/search--v1.png"/>
+    </button>
+  </div>
+  <a routerLink="carts/:id">
+    <img src="https://img.icons8.com/office/16/000000/shopping-cart.png"/>
+  </a> |
+  <a routerLink="/">
+    <img src="https://img.icons8.com/metro/16/000000/guest-male.png"/>
+  </a>
+</nav>

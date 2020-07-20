@@ -1,0 +1,15 @@
+<div [class.products]="true">
+  <div class="card" style="max-width: 13rem; max-height: 23rem; margin: 5px;" *ngFor="let product of products" [routerLink]="['/product/' + product.id]">
+    <img class="card-img-top" [class.product-img]="true" [src]="product.img" alt="Card image cap">
+    <div class="card-body" [class.card-text]="true">
+      <h5 class="card-title" [class.card-name]="true">{{ product.name }}</h5>
+      <p class="card-text" [class.card-price]="true">Rp {{ product.price }}</p>
+      <p class="card-text" [class.card-address]="true">
+        <img src="https://ecs7-p.tokopedia.net/img/power_merchant_badge.png">
+        {{ product.address }}
+      </p>
+      <ngb-rating [rate]="product.rate[0]"></ngb-rating>
+      <p class="card-text" [class.card-rate]="true">({{ (product.rate).split(' / ')[1] }})</p>
+    </div>
+  </div>
+</div> 

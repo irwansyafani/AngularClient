@@ -1,0 +1,27 @@
+<div [class.align]="true" class="card">
+  <div [class.inline]="true">
+    <img [class.merchant-logo]="true" src="https://ecs7-p.tokopedia.net/img/power_merchant_badge.png" alt="power merchant">
+    <p [class.merchant-status]="true">Supplier Kaos Polos</p>
+  </div>
+  <p [class.product-address]="true">Sawah Besar</p>
+  <div [class.inline]="true">
+    <img [class.product-img]="true" src="https://ecs7-p.tokopedia.net/img/cache/200-square/product-1/2016/3/26/6837668/6837668_d2122620-80b3-4852-b2e5-994adee11c92.png.webp" alt="product's img">
+    <div [class.align]="true">
+      <p [class.product-name]="true">PS3 Eye USB Camera (Compatible for PC)</p>
+      <p [class.product-price]="true">Rp 175000</p>
+      <p>- 1 +</p>
+    </div>
+  </div>
+  <div [class.inline]="true">
+    <div class="btn-group-toggle" data-toggle="buttons">
+      <label class="btn active" [class.button-cancel]="true">
+        <input type="checkbox" checked>Trash bin logo grey
+      </label>
+    </div>
+    <div class="btn-group-toggle" data-toggle="buttons">
+      <label class="btn active" [class.button-buy]="true" (click)="alert()">
+        <input type="checkbox" checked>Buy
+      </label>
+    </div>
+  </div>
+</div>
